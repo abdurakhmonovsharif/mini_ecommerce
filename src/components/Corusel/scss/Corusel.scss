@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 80px auto;
+
+    .my-corusel {
+        text-align: center;
+        width: 100%;
+
+        .embla {
+            overflow: hidden;
+        }
+
+        .embla__container {
+            display: flex;
+        }
+
+        .embla__slide1 {
+            flex: 0 0 100%;
+            background: url("../../../images/airpodsmirror.jpg") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            border-image-slice: 10%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                font-size: 155px;
+                font-family: monospace;
+                margin-top: 70px;
+            }
+
+            $color_1: #ffffff;
+            $font-family_1: "Ubuntu", sans-serif;
+
+            .cta {
+                position: relative;
+                margin: 0 auto;
+                padding: 12px 18px;
+                transition: all 0.2s ease;
+                border: none;
+                background: none;
+                display: flex;
+                align-items: center;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: block;
+                    border-radius: 50px;
+                    width: 45px;
+                    background: none;
+                    height: 45px;
+                    transition: all 0.3s ease;
+                }
+
+                span {
+                    position: relative;
+                    font-family: $font-family_1;
+                    font-size: 18px;
+                    font-weight: 700;
+                    letter-spacing: 0.05em;
+                    color: $color_1;
+                }
+
+
+
+                svg {
+                    position: relative;
+                    top: 0;
+                    margin-left: 10px;
+                    fill: none;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke: #ffffff;
+                    stroke-width: 2;
+                    transform: translateX(-5px);
+                    transition: all 0.3s ease;
+                }
+
+                &:hover {
+                    &:before {
+                        width: 100%;
+                        background: #f8f8f8;
+                    }
+
+                    span {
+                        color: #000;
+                    }
+
+                    svg {
+                        transform: translateX(0);
+                        stroke: #000;
+
+                    }
+                }
+
+                &:active {
+                    transform: scale(0.95);
+                }
+            }
+
+
+
+
+
+        }
+
+        .embla__slide2 {
+            min-width: 100px;
+            flex: 0 0 100%;
+            background-image: url("../../../images/photo_2023-02-05_00-43-35.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100vh;
+            position: relative;
+
+            h1 {
+                font-size: 155px;
+                font-family: monospace;
+                margin-top: 70px;
+                color: aliceblue;
+            }
+
+            $color_1: #ffffff;
+            $font-family_1: "Ubuntu", sans-serif;
+
+            .cta {
+                position: relative;
+                margin: auto;
+                padding: 12px 18px;
+                transition: all 0.2s ease;
+                border: none;
+                background: none;
+                display: flex;
+                align-items: center;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: block;
+                    border-radius: 50px;
+                    background: none;
+                    width: 45px;
+                    height: 45px;
+                    transition: all 0.3s ease;
+                }
+
+                span {
+                    position: relative;
+                    font-family: $font-family_1;
+                    font-size: 18px;
+                    font-weight: 700;
+                    letter-spacing: 0.05em;
+                    color: $color_1;
+                }
+
+                svg {
+                    position: relative;
+                    top: 0;
+                    margin-left: 10px;
+                    fill: none;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke: #ffffff;
+                    stroke-width: 2;
+                    transform: translateX(-5px);
+                    transition: all 0.3s ease;
+                }
+
+                &:hover {
+                    &:before {
+                        width: 100%;
+                        background: #085B63;
+                    }
+
+                    svg {
+                        transform: translateX(0);
+                    }
+                }
+
+                &:active {
+                    transform: scale(0.95);
+                }
+            }
+
+        }
+
+        .embla__slide3 {
+            min-width: 100px;
+            flex: 0 0 100%;
+            background-image: url("../../../images/photo_2023-02-05_01-06-39.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            h1 {
+                font-size: 155px;
+                font-family: monospace;
+                margin-top: 70px;
+                color: #D5A72D;
+            }
+
+            $color_1: #ffffff;
+            $font-family_1: "Ubuntu", sans-serif;
+            position: relative;
+
+            .cta {
+                position: relative;
+                margin: 0 auto;
+                padding: 12px 18px;
+                transition: all 0.2s ease;
+                border: none;
+                background: none;
+                display: flex;
+                align-items: center;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: block;
+                    border-radius: 50px;
+                    width: 45px;
+                    height: 45px;
+                    background: none;
+                    transition: all 0.3s ease;
+                }
+
+                span {
+                    position: relative;
+                    font-family: $font-family_1;
+                    font-size: 18px;
+                    font-weight: 700;
+                    letter-spacing: 0.05em;
+                    color: $color_1;
+                }
+
+                svg {
+                    position: relative;
+                    top: 0;
+                    margin-left: 10px;
+                    fill: none;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke: #ffffff;
+                    stroke-width: 2;
+                    transform: translateX(-5px);
+                    transition: all 0.3s ease;
+                }
+
+                &:hover {
+                    &:before {
+                        width: 100%;
+                        background: #D5A72D;
+                    }
+
+                    svg {
+                        transform: translateX(0);
+                    }
+                }
+
+                &:active {
+                    transform: scale(0.95);
+                }
+            }
+
+        }
+    }
+
+}
